@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Study Preference Prediction</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Study Environment Preference Prediction</h2>
+      <form id="prediction-form" method="post">
+        <label for="noise_level">Noise Level</label>
+        <select id="noise_level" name="noise_level">
+          <option value="1">Not important</option>
+          <option value="2">Low</option>
+          <option value="3">Moderate</option>
+          <option value="4">High</option>
+          <option value="5">Very important</option>
+        </select>
+
+        <label for="lighting">Lighting</label>
+        <select id="lighting" name="lighting">
+          <option value="1">Not important</option>
+          <option value="2">Low</option>
+          <option value="3">Moderate</option>
+          <option value="4">High</option>
+          <option value="5">Very important</option>
+        </select>
+
+        <label for="resources">Resources</label>
+        <select id="resources" name="resources">
+          <option value="1">Not important</option>
+          <option value="2">Low</option>
+          <option value="3">Moderate</option>
+          <option value="4">High</option>
+          <option value="5">Very important</option>
+        </select>
+
+        <label for="comfort">Comfort</label>
+        <select id="comfort" name="comfort">
+          <option value="1">Not important</option>
+          <option value="2">Low</option>
+          <option value="3">Moderate</option>
+          <option value="4">High</option>
+          <option value="5">Very important</option>
+        </select>
+
+        <label for="motivation">What motivates you the most?</label>
+        <select id="motivation" name="motivation">
+          <option value="1">Comfort and convenience</option>
+          <option value="2">Minimal distractions</option>
+          <option value="3">
+            Presence of other students for collaboration
+          </option>
+          <option value="4">Availability of study resources</option>
+        </select>
+
+        <label for="environment_with_others"
+          >How do you feel when your study environment has other people?</label
+        >
+        <select id="environment_with_others" name="environment_with_others">
+          <option value="1">Distracted</option>
+          <option value="2">Motivated</option>
+          <option value="3">Neutral</option>
+        </select>
+
+        <label for="alone_or_with_others"
+          >Do you prefer to study alone or with others?</label
+        >
+        <select id="alone_or_with_others" name="alone_or_with_others">
+          <option value="1">Alone</option>
+          <option value="2">In group sessions</option>
+          <option value="3">With friends</option>
+        </select>
+
+        <label for="study_time"
+          >What time of the day do you prefer to study?</label
+        >
+        <select id="study_time" name="study_time">
+          <option value="1">Afternoon</option>
+          environment
+          <option value="2">Morning</option>
+          <option value="3">Evening</option>
+        </select>
+
+        <button type="submit">Predict</button>
+
+        <div id="result" style="display: none">
+          <p class="predictionText">
+            The predicted study environment preference is:
+          </p>
+          <p id="predictionText2"></p>
+          <p class="predictionText">The predicted propapilites:</p>
+          <p class="predictionText" id="propa"></p>
+        </div>
+        <script src="script.js"></script>
+      </form>
+    </div>
+  </body>
+</html>
